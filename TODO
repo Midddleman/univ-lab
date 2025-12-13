@@ -15,17 +15,23 @@ Research:
       ✔ Kappa やほかの比較項目など @started(25-12-08 14:20) @done(25-12-08 21:34) @lasted(7h14m6s)
       ✔ 目的の修正 @done(25-12-08 17:20)
     手法の修正:
-      ☐ 概要の修正
+      ✔ 概要の修正 @done(25-12-13 17:22)
       ✔ kappa @done(25-12-09 23:47)
       ✔ moran's I @done(25-12-09 23:47)
       ✔ predictsの追加 @done(25-12-08 16:36)
-      ☐ 図の修正
+      ✘ 図の修正 @cancelled(25-12-13 17:22)
     結果:
       ✔ まとめの結果 @started(25-12-09 23:48) @done(25-12-11 12:27) @lasted(1d12h39m23s)
       ☐ 2050年/2100年? Crop, grass, forestの差が大きい国/流域?のHorizontal Bar Chartとその積み上げバージョン
-      ☐ 空间变化 @started(25-12-11 12:27)
+      ✔ 空间变化:MORAN'S I & KAPPA @started(25-12-11 12:27) @done(25-12-13 17:19) @lasted(2d4h52m36s)
       ☐ 时间变化
-      ☐ predicts
+      ☐ 基準年の検証
+      ☐ 収量の推移
+      predicts:
+        ☐ 1.	Predictsの結果と両モード差の地図
+        ☐ 2.	Iamc templateでbioの推移を図示　両モードにおけるglobal/r5/r10の推移
+        ☐ 3.	各国/地域における差のbar chart
+
     考察:
       ☐ 上の対応の項目の考察
 
