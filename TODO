@@ -46,3 +46,10 @@ Tier bio bii的也一起做
 
 
 Historical check 
+
+
+ASK:
+  ☐ CL,GL,FRS 怎么count的
+  ☐ nc算法的正确性
+  ☐ iamctamplate basin nodata
+  ☐ nc文件中 农业分为了c3 c4 其中c4包含bio 但是gdx统计的cl不包含bio
