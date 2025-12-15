@@ -7,7 +7,7 @@ for v in variables:
     df = pd.read_csv(f"./CSV/moran/{v}_moran.csv")
 
 
-    num_cols = df.columns[1:]
+    num_cols = df.columns[:]
     df[num_cols] = df[num_cols].applymap(lambda x: f"{x:.3f}" if isinstance(x, (int, float)) else x)
 
     df.to_csv(f"./CSV/moran/{v}_moran.csv_3f.csv", index=False)
