@@ -1,13 +1,12 @@
 import pandas as pd
-names = ["agri","grassland","forest"] 
-modes = ["basin","region"]
 
-variables = [f"{m}_{n}" for n in names for m in modes]
-for v in variables:
-    df = pd.read_csv(f"./CSV/moran/{v}_moran.csv")
+names = ["Basin_yield","Region_yield"]
+# names = ["BIIbasin","BIIregion"]
+for name in names:
+    df = pd.read_csv(f"./original/CSV/IAMC/{name}.csv")
 
 
-    num_cols = df.columns[:]
+    num_cols = df.columns[2:]
     df[num_cols] = df[num_cols].applymap(lambda x: f"{x:.3f}" if isinstance(x, (int, float)) else x)
 
-    df.to_csv(f"./CSV/moran/{v}_moran.csv_3f.csv", index=False)
+    df.to_csv(f"./original/CSV/IAMC/{name}.csv", index=False)

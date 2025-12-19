@@ -7,8 +7,8 @@ script_dir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(script_dir)
 
 # --- 读入数据 ---
-basin = xr.open_dataset("../NC/basin master.nc")
-region = xr.open_dataset("../NC/region master.nc")
+basin = xr.open_dataset("../../../NC/basin master.nc")
+region = xr.open_dataset("../../../NC/region master.nc")
 
 # --- 定义一个函数（对 Dataset 生成大类） ---
 def generate_classes(ds):
@@ -25,6 +25,9 @@ def generate_classes(ds):
     out["grassland"] = ds["pastr"] + ds["range"]
 
     out["forest"] = ds["primf"] + ds["secdf"] + ds["pltns"]
+
+    out["cereal"] = ds["c3ann"] + ds["c4ann"] 
+
 
     return out
 
@@ -43,6 +46,6 @@ for name, data in region_cls.items():
     newnc[f"region_{name}"] = data
 
 # --- 保存 ---
-newnc.to_netcdf("../NC/compare.nc")
+newnc.to_netcdf("../../../NC/compare.nc")
 
 print("Saved compare.nc successfully!")
